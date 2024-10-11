@@ -1,0 +1,358 @@
+Задача не была запущена
+Ошибка компиляции:
+/tmp/tmpo5g1hz50/main.cpp: In instantiation of ‘void Print(std::ostream&, const Collection&) [with Collection = std::vector<std::vector<std::__cxx11::basic_string<char> > >; std::ostream = std::basic_ostream<char>]’:
+/tmp/tmpo5g1hz50/main.cpp:117:14:   required from here
+  117 |         Print(std::cout, ages);
+      |         ~~~~~^~~~~~~~~~~~~~~~~
+/tmp/tmpo5g1hz50/main.cpp:21:13: error: no match for ‘operator<<’ (operand types are ‘std::ostream’ {aka ‘std::basic_ostream<char>’} and ‘const std::vector<std::__cxx11::basic_string<char> >’)
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+In file included from /usr/include/c++/14/iostream:41,
+                 from /tmp/tmpo5g1hz50/main.cpp:1:
+/usr/include/c++/14/ostream:116:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ostream_type& (*)(__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  116 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:116:36: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)’ {aka ‘std::basic_ostream<char>& (*)(std::basic_ostream<char>&)’}
+  116 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/ostream:125:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ios_type& (*)(__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; __ios_type = std::basic_ios<char>]’
+  125 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:125:32: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)’ {aka ‘std::basic_ios<char>& (*)(std::basic_ios<char>&)’}
+  125 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/ostream:135:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  135 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:135:30: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘std::ios_base& (*)(std::ios_base&)’
+  135 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/usr/include/c++/14/ostream:174:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  174 |       operator<<(long __n)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:174:23: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘long int’
+  174 |       operator<<(long __n)
+      |                  ~~~~~^~~
+/usr/include/c++/14/ostream:178:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  178 |       operator<<(unsigned long __n)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:178:32: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘long unsigned int’
+  178 |       operator<<(unsigned long __n)
+      |                  ~~~~~~~~~~~~~~^~~
+/usr/include/c++/14/ostream:182:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  182 |       operator<<(bool __n)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:182:23: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘bool’
+  182 |       operator<<(bool __n)
+      |                  ~~~~~^~~
+In file included from /usr/include/c++/14/ostream:1005:
+/usr/include/c++/14/bits/ostream.tcc:96:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]’
+   96 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/ostream.tcc:97:22: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘short int’
+   97 |     operator<<(short __n)
+      |                ~~~~~~^~~
+/usr/include/c++/14/ostream:189:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  189 |       operator<<(unsigned short __n)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:189:33: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘short unsigned int’
+  189 |       operator<<(unsigned short __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+/usr/include/c++/14/bits/ostream.tcc:110:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]’
+  110 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/ostream.tcc:111:20: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘int’
+  111 |     operator<<(int __n)
+      |                ~~~~^~~
+/usr/include/c++/14/ostream:200:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  200 |       operator<<(unsigned int __n)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:200:31: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘unsigned int’
+  200 |       operator<<(unsigned int __n)
+      |                  ~~~~~~~~~~~~~^~~
+/usr/include/c++/14/ostream:209:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  209 |       operator<<(long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:209:28: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘long long int’
+  209 |       operator<<(long long __n)
+      |                  ~~~~~~~~~~^~~
+/usr/include/c++/14/ostream:213:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  213 |       operator<<(unsigned long long __n)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:213:37: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘long long unsigned int’
+  213 |       operator<<(unsigned long long __n)
+      |                  ~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/c++/14/ostream:228:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  228 |       operator<<(double __f)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:228:25: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘double’
+  228 |       operator<<(double __f)
+      |                  ~~~~~~~^~~
+/usr/include/c++/14/ostream:232:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  232 |       operator<<(float __f)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:232:24: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘float’
+  232 |       operator<<(float __f)
+      |                  ~~~~~~^~~
+/usr/include/c++/14/ostream:240:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  240 |       operator<<(long double __f)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:240:30: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘long double’
+  240 |       operator<<(long double __f)
+      |                  ~~~~~~~~~~~~^~~
+/usr/include/c++/14/ostream:298:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]’
+  298 |       operator<<(const void* __p)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:298:30: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘const void*’
+  298 |       operator<<(const void* __p)
+      |                  ~~~~~~~~~~~~^~~
+/usr/include/c++/14/ostream:303:7: note: candidate: ‘std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::nullptr_t) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; std::nullptr_t = std::nullptr_t]’
+  303 |       operator<<(nullptr_t)
+      |       ^~~~~~~~
+/usr/include/c++/14/ostream:303:18: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘std::nullptr_t’
+  303 |       operator<<(nullptr_t)
+      |                  ^~~~~~~~~
+/usr/include/c++/14/bits/ostream.tcc:124:5: note: candidate: ‘std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; __streambuf_type = std::basic_streambuf<char>]’
+  124 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/ostream.tcc:125:34: note:   no known conversion for argument 1 from ‘const std::vector<std::__cxx11::basic_string<char> >’ to ‘std::basic_ostream<char>::__streambuf_type*’ {aka ‘std::basic_streambuf<char>*’}
+  125 |     operator<<(__streambuf_type* __sbin)
+      |                ~~~~~~~~~~~~~~~~~~^~~~~~
+/tmp/tmpo5g1hz50/main.cpp:8:10: note: candidate: ‘template<class First, class Second> std::ostream& operator<<(std::ostream&, const std::pair<_T1, _T2>&)’
+    8 | ostream& operator<<(ostream& out, const pair<First, Second>& container) {
+      |          ^~~~~~~~
+/tmp/tmpo5g1hz50/main.cpp:8:10: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   ‘const std::vector<std::__cxx11::basic_string<char> >’ is not derived from ‘const std::pair<_T1, _T2>’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+In file included from /usr/include/c++/14/bits/basic_string.h:47,
+                 from /usr/include/c++/14/string:54,
+                 from /usr/include/c++/14/bits/locale_classes.h:40,
+                 from /usr/include/c++/14/bits/ios_base.h:41,
+                 from /usr/include/c++/14/ios:44,
+                 from /usr/include/c++/14/ostream:40:
+/usr/include/c++/14/string_view:760:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, basic_string_view<_CharT, _Traits>)’
+  760 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/14/string_view:760:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   ‘std::vector<std::__cxx11::basic_string<char> >’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/bits/basic_string.h:4077:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 4077 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/14/bits/basic_string.h:4077:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   ‘const std::vector<std::__cxx11::basic_string<char> >’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+In file included from /usr/include/c++/14/bits/memory_resource.h:38,
+                 from /usr/include/c++/14/string:67:
+/usr/include/c++/14/cstddef:125:5: note: candidate: ‘template<class _IntegerType> constexpr std::__byte_op_t<_IntegerType> std::operator<<(byte, _IntegerType)’
+  125 |     operator<<(byte __b, _IntegerType __shift) noexcept
+      |     ^~~~~~~~
+/usr/include/c++/14/cstddef:125:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘out’ (type ‘std::ostream’ {aka ‘std::basic_ostream<char>’}) to type ‘std::byte’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+In file included from /usr/include/c++/14/bits/ios_base.h:46:
+/usr/include/c++/14/system_error:339:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const error_code&)’
+  339 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^~~~~~~~
+/usr/include/c++/14/system_error:339:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘element’ (type ‘const std::vector<std::__cxx11::basic_string<char> >’) to type ‘const std::error_code&’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:560:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _CharT)’
+  560 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:560:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘std::vector<std::__cxx11::basic_string<char> >’)
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:570:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, char)’
+  570 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:570:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘element’ (type ‘const std::vector<std::__cxx11::basic_string<char> >’) to type ‘char’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:576:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char)’
+  576 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:576:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘element’ (type ‘const std::vector<std::__cxx11::basic_string<char> >’) to type ‘char’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:587:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, signed char)’
+  587 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:587:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘element’ (type ‘const std::vector<std::__cxx11::basic_string<char> >’) to type ‘signed char’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:592:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, unsigned char)’
+  592 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:592:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘element’ (type ‘const std::vector<std::__cxx11::basic_string<char> >’) to type ‘unsigned char’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:601:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, wchar_t)’ (deleted)
+  601 |     operator<<(basic_ostream<char, _Traits>&, wchar_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:601:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘element’ (type ‘const std::vector<std::__cxx11::basic_string<char> >’) to type ‘wchar_t’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:606:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char8_t)’ (deleted)
+  606 |     operator<<(basic_ostream<char, _Traits>&, char8_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:606:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘element’ (type ‘const std::vector<std::__cxx11::basic_string<char> >’) to type ‘char8_t’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:611:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char16_t)’ (deleted)
+  611 |     operator<<(basic_ostream<char, _Traits>&, char16_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:611:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘element’ (type ‘const std::vector<std::__cxx11::basic_string<char> >’) to type ‘char16_t’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:615:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char32_t)’ (deleted)
+  615 |     operator<<(basic_ostream<char, _Traits>&, char32_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:615:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘element’ (type ‘const std::vector<std::__cxx11::basic_string<char> >’) to type ‘char32_t’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:621:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, char8_t)’ (deleted)
+  621 |     operator<<(basic_ostream<wchar_t, _Traits>&, char8_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:621:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   mismatched types ‘wchar_t’ and ‘char’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:626:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, char16_t)’ (deleted)
+  626 |     operator<<(basic_ostream<wchar_t, _Traits>&, char16_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:626:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   mismatched types ‘wchar_t’ and ‘char’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:630:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, char32_t)’ (deleted)
+  630 |     operator<<(basic_ostream<wchar_t, _Traits>&, char32_t) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:630:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   mismatched types ‘wchar_t’ and ‘char’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:651:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const _CharT*)’
+  651 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:651:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   mismatched types ‘const _CharT*’ and ‘std::vector<std::__cxx11::basic_string<char> >’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/bits/ostream.tcc:307:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const char*)’
+  307 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/14/bits/ostream.tcc:307:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘element’ (type ‘const std::vector<std::__cxx11::basic_string<char> >’) to type ‘const char*’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:668:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char*)’
+  668 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:668:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘element’ (type ‘const std::vector<std::__cxx11::basic_string<char> >’) to type ‘const char*’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:681:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const signed char*)’
+  681 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:681:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘element’ (type ‘const std::vector<std::__cxx11::basic_string<char> >’) to type ‘const signed char*’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:686:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const unsigned char*)’
+  686 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:686:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘element’ (type ‘const std::vector<std::__cxx11::basic_string<char> >’) to type ‘const unsigned char*’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:695:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const wchar_t*)’ (deleted)
+  695 |     operator<<(basic_ostream<char, _Traits>&, const wchar_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:695:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘element’ (type ‘const std::vector<std::__cxx11::basic_string<char> >’) to type ‘const wchar_t*’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:700:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char8_t*)’ (deleted)
+  700 |     operator<<(basic_ostream<char, _Traits>&, const char8_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:700:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘element’ (type ‘const std::vector<std::__cxx11::basic_string<char> >’) to type ‘const char8_t*’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:705:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char16_t*)’ (deleted)
+  705 |     operator<<(basic_ostream<char, _Traits>&, const char16_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:705:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘element’ (type ‘const std::vector<std::__cxx11::basic_string<char> >’) to type ‘const char16_t*’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:709:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char32_t*)’ (deleted)
+  709 |     operator<<(basic_ostream<char, _Traits>&, const char32_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:709:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   cannot convert ‘element’ (type ‘const std::vector<std::__cxx11::basic_string<char> >’) to type ‘const char32_t*’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:715:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, const char8_t*)’ (deleted)
+  715 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char8_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:715:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   mismatched types ‘wchar_t’ and ‘char’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:720:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, const char16_t*)’ (deleted)
+  720 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char16_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:720:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   mismatched types ‘wchar_t’ and ‘char’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:724:5: note: candidate: ‘template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, const char32_t*)’ (deleted)
+  724 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char32_t*) = delete;
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:724:5: note:   template argument deduction/substitution failed:
+/tmp/tmpo5g1hz50/main.cpp:21:13: note:   mismatched types ‘wchar_t’ and ‘char’
+   21 |         out << element;
+      |         ~~~~^~~~~~~~~~
+/usr/include/c++/14/ostream:807:5: note: candidate: ‘template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)’
+  807 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:807:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/14/ostream: In substitution of ‘template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = std::vector<std::__cxx11::basic_string<char> >]’:
+/tmp/tmpo5g1hz50/main.cpp:21:13:   required from ‘void Print(std::ostream&, const Collection&) [with Collection = std::vector<std::vector<std::__cxx11::basic_string<char> > >; std::ostream = std::basic_ostream<char>]’
+/usr/include/c++/14/ostream:807:5: note:    21 |         out << element;
+/usr/include/c++/14/ostream:807:5: note:       |         ~~~~^~~~~~~~~~
+/tmp/tmpo5g1hz50/main.cpp:117:14:   required from here
+/usr/include/c++/14/ostream:807:5: note:   117 |         Print(std::cout, ages);
+/usr/include/c++/14/ostream:807:5: note:       |         ~~~~~^~~~~~~~~~~~~~~~~
+/usr/include/c++/14/ostream:807:5: error: template constraint failure for ‘template<class _Os, class _Tp>  requires (__derived_from_ios_base<_Os>) && requires(_Os& __os, const _Tp& __t) {__os << __t;} using std::__rvalue_stream_insertion_t = _Os&&’
+  807 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+/usr/include/c++/14/ostream:807:5: note: constraints not satisfied
+/usr/include/c++/14/ostream: In substitution of ‘template<class _Os, class _Tp>  requires (__derived_from_ios_base<_Os>) && requires(_Os& __os, const _Tp& __t) {__os << __t;} using std::__rvalue_stream_insertion_t = _Os&& [with _Os = std::basic_ostream<char>&; _Tp = std::vector<std::__cxx11::basic_string<char> >]’:
+/usr/include/c++/14/ostream:807:5:   required by substitution of ‘template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = std::vector<std::__cxx11::basic_string<char> >]’
+/tmp/tmpo5g1hz50/main.cpp:21:13:   required from ‘void Print(std::ostream&, const Collection&) [with Collection = std::vector<std::vector<std::__cxx11::basic_string<char> > >; std::ostream = std::basic_ostream<char>]’
+/usr/include/c++/14/ostream:807:5: note:    21 |         out << element;
+/usr/include/c++/14/ostream:807:5: note:       |         ~~~~^~~~~~~~~~
+/tmp/tmpo5g1hz50/main.cpp:117:14:   required from here
+/usr/include/c++/14/ostream:807:5: note:   117 |         Print(std::cout, ages);
+/usr/include/c++/14/ostream:807:5: note:       |         ~~~~~^~~~~~~~~~~~~~~~~
+/usr/include/c++/14/ostream:774:13:   required for the satisfaction of ‘__derived_from_ios_base<_Os>’ [with _Os = std::basic_ostream<char, std::char_traits<char> >&]
+/usr/include/c++/14/ostream:774:39: note: the expression ‘is_class_v<_Tp> [with _Tp = std::basic_ostream<char, std::char_traits<char> >&]’ evaluated to ‘false’
+  774 |     concept __derived_from_ios_base = is_class_v<_Tp>
